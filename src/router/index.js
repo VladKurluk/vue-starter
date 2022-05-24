@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import RootView from "@/views/RootView.vue";
+import authRoutes from "@/views/auth/authRoutes";
 
 const routes = [
+  ...authRoutes,
   {
     path: "/",
     name: "Root",

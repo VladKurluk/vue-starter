@@ -1,15 +1,17 @@
 <template>
-  <div class="main-layout">
-    Main Layout
-    <slot />
-  </div>
+  <div>SignUp Page</div>
 </template>
 
 <script>
 import {} from "@/components";
 
 export default {
-  name: "MainLayout",
+  name: "SignUpPage",
   components: {},
+  data() {
+    return {};
+  },
+  computed: {},
+  methods: {},
 };
 </script>

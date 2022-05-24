@@ -7,10 +7,12 @@
 </template>
 
 <script>
-import MainLayout from "@/layouts/MainLayout";
+import MainLayout from "@/layouts/MainLayout.vue";
+import AuthLayout from "@/layouts/AuthLayout.vue";
 
 const layoutComponents = {
   main: MainLayout,
+  auth: AuthLayout,
 };
 
 export default {

@@ -1,6 +1,6 @@
 <template>
-  <div class="main-layout">
-    Main Layout
+  <div class="auth-layout">
+    Auth Layout
     <slot />
   </div>
 </template>
@@ -9,7 +9,7 @@
 import {} from "@/components";
 
 export default {
-  name: "MainLayout",
+  name: "AuthLayout",
   components: {},
 };
 </script>
