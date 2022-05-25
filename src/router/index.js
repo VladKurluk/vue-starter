@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import RootView from "@/views/RootView.vue";
 import authRoutes from "@/views/auth/authRoutes";
+import { ifAuthenticated } from "@/helpers/routerHelpers";
 
 const routes = [
   ...authRoutes,
@@ -8,6 +9,7 @@ const routes = [
     path: "/",
     name: "Root",
     component: RootView,
+    beforeEnter: ifAuthenticated,
   },
   // Page for 404 error
   {

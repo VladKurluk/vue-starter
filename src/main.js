@@ -11,7 +11,7 @@ export const app = createApp(App);
 /**
  * Automatically load Vue plugins
  */
-loadPlugins([]);
+loadPlugins(["vue-toastification"]);
 
 /**
  * Automatically import and register components globaly

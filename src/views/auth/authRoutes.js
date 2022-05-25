@@ -1,4 +1,4 @@
-// import { ifNotAuthenticated } from "@/helpers/routerHelpers";
+import { ifNotAuthenticated } from "@/helpers/routerHelpers";
 
 const authRoutes = [
   {
@@ -7,7 +7,7 @@ const authRoutes = [
     component: () =>
       import(/*webpackChunkName: "SignUpPage" */ "@/views/auth/SignUpPage.vue"),
     meta: { layout: "auth" },
-    // beforeEnter: ifNotAuthenticated,
+    beforeEnter: ifNotAuthenticated,
   },
   {
     path: "/auth/login",
@@ -15,7 +15,7 @@ const authRoutes = [
     component: () =>
       import(/* webpackChunkName: "LoginPage" */ "@/views/auth/LoginPage.vue"),
     meta: { layout: "auth" },
-    // beforeEnter: ifNotAuthenticated,
+    beforeEnter: ifNotAuthenticated,
   },
 ];
 
